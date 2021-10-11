@@ -9,7 +9,25 @@
 </head>
 
 <body>
-    <h2>Sobre este site</h2>
+    <header id="cabecalho-principal">
+        <nav id="navegacao-principal">
+            <a href="{% url 'index' %}">
+                <p>WTF</p>
+            </a>
+            <ul>
+                <li><a href="{% url 'about' %}">Sobre</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="conteiner-principal">
+        <h2>Sobre este site</h2>
+    </main>
+    <footer id="rodape-principal">
+        <p>
+            <small>Copyright 2021</small>
+        </p>
+    </footer>
 </body>
 
 </html>
