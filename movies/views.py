@@ -4,9 +4,8 @@ from django.shortcuts import render
 
 
 def detail_movie(request, movie_id):
-    movie = movie_data[movie_id - 1]
-    return HttpResponse(
-        f'Detalhes do filme {movie["name"]} ({movie["release_year"]})')
+    context = {'movie': movie_data[movie_id - 1]}
+    return render(request, 'movies/detail.html', context)
 
 
 def list_movies(request):
